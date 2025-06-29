@@ -1,0 +1,8 @@
+-- Write a SQL statement to create a view named no_descriptions that includes all of the columns in the listings table except for description.
+
+CREATE VIEW no_descriptions AS
+SELECT id, property_type, host_name, accommodates, bedrooms
+FROM listings;
+
+-- Used during testing
+DROP VIEW no_descriptions;
